@@ -7,18 +7,17 @@ import particlesConfig from '../config/particlesConfig';
 const Hero = () => {
     return (
         <>
-            <div className="bg-indigo-900">
+            <div className="flex flex-col justify-center bg-indigo-900">
                 <Particles
                     params={particlesConfig}
                     height="100vh"
                 />
+                <div className="absolute self-center z-50" >
+                    <div className="text-5xl font-heading text-gray-200 text-center select-none" >
+                        Hello, I'm <span className="text-red-600 font-semibold" >Nick Russo</span>.<br/>I'm a front-end web developer.
+                    </div>
+                </div>
             </div>
-
-            {/* <style jsx>{`
-                .hero {
-                    background-color: #191D25;
-                }
-            `}</style> */}
         </>
     );
 }

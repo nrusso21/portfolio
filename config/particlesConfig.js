@@ -14,7 +14,8 @@ const particlesConfig = {
         },
         "line_linked": {
             "enable": true,
-            "distance": 180
+            "distance": 150,
+            "opacity": .3
         },
         "move": {
             "speed": 3,
@@ -26,6 +27,7 @@ const particlesConfig = {
         }
     },
     "interactivity": {
+        "detect_on": "window",
         "events": {
             "onhover": {
                 "enable": true,
@@ -35,9 +37,9 @@ const particlesConfig = {
         "modes": {
             "bubble": {
                 "distance": 400,
-                "size": 3,
+                "size": 4,
                 "duration": 2,
-                "opacity": 8,
+                "opacity": .4,
                 "speed": 3
             }
         }
