@@ -1,8 +1,6 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 
-import useScript from '../components/hooks/useScript';
-
 import particlesConfig from '../config/particlesConfig';
 
 
