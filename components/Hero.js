@@ -5,8 +5,6 @@ import particlesConfig from '../config/particlesConfig';
 
 
 const Hero = () => {
-    useScript('https://cdn.rawgit.com/progers/pathseg/master/pathseg.js');
-
     return (
         <>
             <div className="hero">
