@@ -1,6 +1,7 @@
 module.exports = {
     plugins: [
-        "tailwindcss",
+        require("postcss-easy-import"),
+        require("tailwindcss"),
         process.env.NODE_ENV === "production"
             ? [
                 "@fullhuman/postcss-purgecss",
@@ -13,6 +14,7 @@ module.exports = {
                 }
             ]
             : undefined,
-        "autoprefixer"
+        require("autoprefixer"),
+        require("cssnano")
     ]
 };

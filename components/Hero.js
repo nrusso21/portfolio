@@ -7,18 +7,18 @@ import particlesConfig from '../config/particlesConfig';
 const Hero = () => {
     return (
         <>
-            <div className="hero">
+            <div className="bg-indigo-900">
                 <Particles
                     params={particlesConfig}
                     height="100vh"
                 />
             </div>
 
-            <style jsx>{`
+            {/* <style jsx>{`
                 .hero {
                     background-color: #191D25;
                 }
-            `}</style>
+            `}</style> */}
         </>
     );
 }
