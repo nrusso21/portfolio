@@ -1,7 +1,9 @@
-import React from 'react'
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
+
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
+import SectionHeading from '../components/SectionHeading';
 
 const Home = () => (
   <div>
@@ -13,6 +15,10 @@ const Home = () => (
     <Hero />
 
     <Nav />
+
+    <section id="about" >
+      <SectionHeading text="About" />
+    </section>
   </div>
 )
 

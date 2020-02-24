@@ -56,8 +56,8 @@ module.exports = {
         500: '#6b6b80',
         600: '#56566e',
         700: '#41415c',
-        800: '#2c2c4a',
-        900: '#171738', //Middle Red Purple//
+        800: '#171738', //Middle Red Purple//
+        900: '#111129',
       },
       purple: {
         100: '#efedf4',
@@ -168,23 +168,6 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      sans: [
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-      serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       heading: 'Muli',
       body: 'Open Sans',
     },
