@@ -10,11 +10,13 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
     "@zeit/next-css": "^1.0.1",
+    "animate.css": "^3.7.2",
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
     "next": "9.2.1",
     "postcss-easy-import": "^3.0.0",
     "react": "16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "16.12.0",
     "react-particles-js": "^2.7.1",
     "tailwindcss": "^1.2.0"
