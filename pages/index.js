@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import "animate.css/animate.min.css"
 
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
@@ -17,7 +18,7 @@ const Home = () => (
     <Nav />
 
     <section id="about" >
-      <SectionHeading text="About" />
+      <SectionHeading text="About" animationDirection="Left" />
     </section>
   </div>
 )
