@@ -41,7 +41,6 @@ h3 {
   @apply h-full;
   width: calc(100% * 0.57735);
 }
-
 .hexagon:before {
   background-color: inherit;
   content: "";
@@ -52,7 +51,6 @@ h3 {
   transform: rotateZ(60deg);
   width: inherit;
 }
-
 .hexagon:after {
   background-color: inherit;
   content: "";
