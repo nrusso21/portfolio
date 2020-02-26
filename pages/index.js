@@ -1,26 +1,35 @@
-import React from 'react';
-import Head from 'next/head';
-import "animate.css/animate.min.css"
+import React from "react";
+import Head from "next/head";
+import ScrollAnimation from "react-animate-on-scroll";
 
-import Nav from '../components/Nav';
-import Hero from '../components/Hero';
-import SectionHeading from '../components/SectionHeading';
+import Nav from "../components/Nav";
+import Hero from "../components/Hero";
+import SectionHeading from "../components/SectionHeading";
 
 const Home = () => (
-  <div>
+  <>
     <Head>
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <section id="home">
+      <Hero />
 
-    <Hero />
-
-    <Nav />
-
-    <section id="about" >
-      <SectionHeading text="About" animationDirection="Left" />
+      <Nav />
     </section>
-  </div>
-)
 
-export default Home
+    <section id="about" className="content-section container">
+      <SectionHeading text="About" animationDirection="Left" />
+      <div className="flex flex-row" >
+        <div className="hex-wrapper">
+          <div className="hexagon"></div>
+        </div>
+        <div className="hex-wrapper">
+          <div className="hexagon"></div>
+        </div>
+      </div>
+    </section>
+  </>
+);
+
+export default Home;

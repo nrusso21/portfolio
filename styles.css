@@ -1,8 +1,13 @@
 /* purgecss start ignore */
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400|Open+Sans&display=swap");
 @tailwind base;
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-heading;
 }
 h1 {
@@ -14,11 +19,49 @@ h2 {
 h3 {
   @apply text-lg;
 }
-section {
+.content-section {
   @apply flex;
   @apply flex-col;
+  @apply mx-auto;
   @apply pt-20;
   @apply pb-24;
+}
+
+.hex-wrapper {
+  @apply inline-block;
+  @apply w-24;
+  @apply h-24;
+  @apply relative;
+  @apply text-center;
+  transform: rotateZ(30deg);
+}
+.hexagon {
+  @apply bg-teal-300;
+  @apply inline-block;
+  @apply h-full;
+  width: calc(100% * 0.57735);
+}
+
+.hexagon:before {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  @apply absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  @apply top-0;
+  transform: rotateZ(60deg);
+  width: inherit;
+}
+
+.hexagon:after {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  @apply absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  @apply top-0;
+  transform: rotateZ(-60deg);
+  width: inherit;
 }
 
 @tailwind components;
