@@ -1,5 +1,5 @@
 /* purgecss start ignore */
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600|Open+Sans&display=swap");
 @tailwind base;
 
 h1,
@@ -9,6 +9,7 @@ h4,
 h5,
 h6 {
   @apply font-heading;
+  @apply font-semibold;
 }
 h1 {
   @apply text-2xl;
@@ -37,9 +38,10 @@ h3 {
 }
 .hexagon {
   @apply bg-teal-300;
-  @apply inline-block;
+  @apply inline-flex;
   @apply h-full;
   width: calc(100% * 0.57735);
+  @apply justify-center;
 }
 .hexagon:before {
   background-color: inherit;
@@ -60,6 +62,14 @@ h3 {
   @apply top-0;
   transform: rotateZ(-60deg);
   width: inherit;
+}
+.hexagon-icon {
+  fill: #fff;
+  @apply self-center;
+  z-index: 1;
+  transform: rotateZ(-30deg);
+  @apply w-12;
+  @apply h-12;
 }
 
 @tailwind components;

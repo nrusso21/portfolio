@@ -14,7 +14,7 @@ const Hero = () => {
                 />
                 <div className="absolute self-center z-50" >
                     <div className="text-5xl font-heading font-light text-gray-200 text-center select-none" >
-                        Hello, I'm <span className="text-red-600 font-semibold" >Nick Russo</span>.<br/>I'm a front-end web developer.
+                        Hello, I'm <span className="text-red-600 font-semibold" >Nick Russo</span>.<br/>I'm a full-stack web developer.
                     </div>
                 </div>
             </div>
