@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Icon from "@mdi/react";
 
 const Bullet = ({ icon, label, body, delay }) => {
+  const [viewportWidth, setViewportWidth] = useState(null);
+  if (process.browser) {
+    useEffect(() => setViewportWidth(document.children[0].clientWidth), [
+      document.children[0].clientWidth
+    ]);
+  }
+
   return (
     <ScrollAnimation
-      className="flex flex-col w-full px-8"
+      className="flex flex-col w-full"
       animateIn="fadeIn"
-      delay={delay}
+      delay={viewportWidth > 640 ? delay : 0}
       animateOnce={true}
     >
       <ScrollAnimation
         className="flex justify-center"
         animateIn="flipInY"
-        delay={delay}
+        delay={viewportWidth > 640 ? 100 + delay : 0}
         animateOnce={true}
       >
         <div className="hex-wrapper">
@@ -22,8 +29,10 @@ const Bullet = ({ icon, label, body, delay }) => {
           </div>
         </div>
       </ScrollAnimation>
-      <h1 className="text-center mt-4 mb-2 text-indigo-900">{label}</h1>
-      <div className="mb-12 text-center font-heading font-light">{body}</div>
+      <h1 className="text-center mt-4 mb-2 text-gray-700">{label}</h1>
+      <div className="mb-12 px-8 text-center font-body text-gray-600">
+        {body}
+      </div>
     </ScrollAnimation>
   );
 };
