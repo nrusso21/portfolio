@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const SectionHeading = ({ text, animationDirection }) => {
+const SectionHeading = ({ title, animationDirection }) => {
   return (
     <ScrollAnimation
       className="flex flex-col justify-center"
@@ -9,7 +9,7 @@ const SectionHeading = ({ text, animationDirection }) => {
       animateOnce={true}
     >
       <div className="text-4xl font-heading font-semibold text-center text-indigo-900">
-        {text}
+        {title}
       </div>
       <ScrollAnimation
         className="flex justify-center"

@@ -25,15 +25,17 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <section id="home">
         <Hero />
 
         <Nav />
       </section>
 
-      <section id="about" className="content-section container bg-grey-100">
-        <SectionHeading text="About" animationDirection="Left" />
-        <div className="grid lg:grid-cols-4 md:grid-cols-2">
+
+      <section id="about" className="content-section container">
+        <SectionHeading title="About" animationDirection="Left" />
+        <div className="grid grid-cols-2 lg:grid-cols-4">
           <Bullet
             icon={mdiSpeedometer}
             label="Fast"
@@ -58,9 +60,9 @@ const Home = () => {
             delay={1000}
           />
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2">
-          <ScrollAnimation animateIn="slideInLeft" animateOnce={true}>
-            <img src="/hexagon-avatar.png" className="w-64 mx-auto" />
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <ScrollAnimation className="my-12 md:my-0" animateIn="slideInLeft" animateOnce={true}>
+            <img src="/img/hexagon-avatar.png" className="w-64 mx-auto" />
             <h1 className="text-center my-4 text-gray-700">Hello, World!</h1>
             <div className="px-20 text-center font-body text-gray-600">
               I'm a full-stack developer located in Charlotte, NC. <br /> My
@@ -73,9 +75,9 @@ const Home = () => {
             animateIn="slideInRight"
             animateOnce={true}
           >
-            <SkillBullet imgSrc="/react-logo.svg" label="React" />
+            <SkillBullet imgSrc="/img/react-logo.svg" label="React" />
             <SkillBullet
-              imgSrc="/javascript-logo.svg"
+              imgSrc="/img/javascript-logo.svg"
               label="JavaScript"
               left
             />
@@ -89,6 +91,15 @@ const Home = () => {
             <SkillBullet imgSrc="/img/css-logo.svg" label="CSS" />
           </ScrollAnimation>
         </div>
+      </section>
+
+
+      <section id="portfolio" className="content-section container" >
+        <SectionHeading title="Portfolio" animationDirection="Right" />
+        <div className="grid grid-cols-2" >
+
+        </div>
+
       </section>
     </>
   );
