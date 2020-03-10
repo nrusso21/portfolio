@@ -6,13 +6,15 @@ import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import SectionHeading from "../components/SectionHeading";
 import Bullet from "../components/Bullet";
+import SkillBullet from "../components/SkillBullet";
 
 import Icon from "@mdi/react";
 import {
   mdiSpeedometer,
   mdiMonitorCellphone,
   mdiLightbulbOn,
-  mdiRocket
+  mdiRocket,
+  mdiPencilRuler
 } from "@mdi/js";
 
 const Home = () => {
@@ -65,6 +67,26 @@ const Home = () => {
               passion for crafting effecient, well-optimized applications with
               engaging and intuitive user experiences knows no bounds!
             </div>
+          </ScrollAnimation>
+          <ScrollAnimation
+            className="grid grid-cols-2"
+            animateIn="slideInRight"
+            animateOnce={true}
+          >
+            <SkillBullet imgSrc="/react-logo.svg" label="React" />
+            <SkillBullet
+              imgSrc="/javascript-logo.svg"
+              label="JavaScript"
+              left
+            />
+            <SkillBullet imgSrc="/img/html-logo.svg" label="HTML" right />
+            <SkillBullet imgSrc="/img/css-logo.svg" label="CSS" />
+            <SkillBullet imgSrc="/img/photoshop-logo.svg" label="Photoshop" left />
+            <SkillBullet imgSrc="/img/illustrator-logo.svg" label="Illustrator" right />
+            <SkillBullet imgSrc="/img/pencil-ruler.svg" label="UI/UX Design" />
+            <SkillBullet imgSrc="/img/figma-logo.svg" label="Figma" left />
+            <SkillBullet imgSrc="/img/node-js-logo.svg" label="Node.js" right />
+            <SkillBullet imgSrc="/img/css-logo.svg" label="CSS" />
           </ScrollAnimation>
         </div>
       </section>

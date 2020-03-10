@@ -28,6 +28,7 @@ h3 {
   @apply pb-24;
 }
 
+
 .hex-wrapper {
   @apply inline-block;
   @apply w-24;
@@ -35,6 +36,10 @@ h3 {
   @apply relative;
   @apply text-center;
   transform: rotateZ(30deg);
+}
+.hex-wrapper.small {
+  @apply w-16;
+  @apply h-16;
 }
 .hexagon {
   @apply bg-teal-300;
@@ -71,6 +76,13 @@ h3 {
   @apply w-12;
   @apply h-12;
 }
+.hexagon-image {
+  @apply self-center;
+  @apply w-full;
+  z-index: 1;
+  transform: rotateZ(-30deg);
+}
+
 
 @tailwind components;
 /* purgecss end ignore */
