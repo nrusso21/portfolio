@@ -3,9 +3,8 @@
 @tailwind base;
 
 body {
-  @apply bg-gray-100;
+  @apply overflow-x-hidden;
 }
-
 h1,
 h2,
 h3,
@@ -24,12 +23,33 @@ h2 {
 h3 {
   @apply text-lg;
 }
+a {
+  outline: 0;
+}
+
 .content-section {
   @apply flex;
   @apply flex-col;
   @apply mx-auto;
   @apply pt-20;
   @apply pb-24;
+}
+.outline-button {
+  width: max-content;
+  @apply bg-transparent; 
+  @apply text-purple-700; 
+  @apply font-semibold; 
+  @apply py-2; 
+  @apply px-4; 
+  @apply border; 
+  @apply border-purple-800; 
+  @apply cursor-pointer;
+}
+
+
+.transition-easing {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 
@@ -87,6 +107,13 @@ h3 {
   transform: rotateZ(-30deg);
 }
 
+
+.card-github-link{
+  fill: #111129;
+}
+.card-github-link:hover {
+  fill: #593c8f;
+}
 
 @tailwind components;
 /* purgecss end ignore */

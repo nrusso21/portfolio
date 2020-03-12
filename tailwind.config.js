@@ -91,6 +91,7 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '72': '20rem',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -150,9 +151,11 @@ module.exports = {
       move: 'move',
       'not-allowed': 'not-allowed',
     },
-    fill: {
+    fill: theme => ({
       current: 'currentColor',
-    },
+      'purple': theme('colors.purple.800'),
+      'indigo': theme('colors.indigo.900'),
+    }),
     flex: {
       '1': '1 1 0%',
       auto: '1 1 auto',

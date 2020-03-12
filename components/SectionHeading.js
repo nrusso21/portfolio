@@ -6,7 +6,7 @@ const SectionHeading = ({ title, animationDirection }) => {
     <ScrollAnimation
       className="flex flex-col justify-center"
       animateIn={`fadeIn${animationDirection}`}
-      animateOnce={true}
+      animateOnce
     >
       <div className="text-4xl font-heading font-semibold text-center text-indigo-900">
         {title}
@@ -15,7 +15,7 @@ const SectionHeading = ({ title, animationDirection }) => {
         className="flex justify-center"
         delay={500}
         animateIn={`fadeIn${animationDirection}`}
-        animateOnce={true}
+        animateOnce
       >
         <div className="w-20 h-1 bg-indigo-900 mt-2 mb-20" />
       </ScrollAnimation>

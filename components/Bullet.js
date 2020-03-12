@@ -15,13 +15,13 @@ const Bullet = ({ icon, label, body, delay }) => {
       className="flex flex-col w-full"
       animateIn="fadeIn"
       delay={viewportWidth > 640 ? delay : 0}
-      animateOnce={true}
+      animateOnce
     >
       <ScrollAnimation
         className="flex justify-center"
         animateIn="flipInY"
         delay={viewportWidth > 640 ? 100 + delay : 0}
-        animateOnce={true}
+        animateOnce
       >
         <div className="hex-wrapper">
           <div className="hexagon">
