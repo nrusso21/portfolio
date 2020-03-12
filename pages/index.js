@@ -66,7 +66,7 @@ const Home = () => {
               animateIn="slideInLeft"
               animateOnce={true}
             >
-              <img src="/img/hexagon-avatar.png" className="w-64 mx-auto" />
+              <img src="/img/hexagon-avatar.png" className="w-64 md:w-48 lg:w-64 mx-auto" />
               <h1 className="text-center my-4 text-gray-700">Hello, World!</h1>
               <div className="px-20 text-center font-body text-gray-600">
                 I'm a full-stack developer located in Charlotte, NC. <br /> My
@@ -79,43 +79,56 @@ const Home = () => {
               animateIn="slideInRight"
               animateOnce={true}
             >
-              <SkillBullet imgSrc="/img/skills/react-logo.svg" label="React" />
+              <SkillBullet
+                imgSrc="/img/skills/react-logo.svg"
+                label="React"
+                side="center"
+              />
               <SkillBullet
                 imgSrc="/img/skills/javascript-logo.svg"
                 label="JavaScript"
-                left
+                side="left"
               />
               <SkillBullet
                 imgSrc="/img/skills/html-logo.svg"
                 label="HTML"
-                right
+                side="right"
               />
-              <SkillBullet imgSrc="/img/skills/css-logo.svg" label="CSS" />
+              <SkillBullet
+                imgSrc="/img/skills/css-logo.svg"
+                label="CSS"
+                side="center"
+              />
               <SkillBullet
                 imgSrc="/img/skills/photoshop-logo.svg"
                 label="Photoshop"
-                left
+                side="left"
               />
               <SkillBullet
                 imgSrc="/img/skills/illustrator-logo.svg"
                 label="Illustrator"
-                right
+                side="right"
               />
               <SkillBullet
                 imgSrc="/img/skills/pencil-ruler.svg"
                 label="UI/UX Design"
+                side="center"
               />
               <SkillBullet
                 imgSrc="/img/skills/figma-logo.svg"
                 label="Figma"
-                left
+                side="left"
               />
               <SkillBullet
                 imgSrc="/img/skills/node-js-logo.svg"
                 label="Node.js"
-                right
+                side="right"
               />
-              <SkillBullet imgSrc="/img/skills/css-logo.svg" label="CSS" />
+              <SkillBullet
+                imgSrc="/img/skills/css-logo.svg"
+                label="CSS"
+                side="center"
+              />
             </ScrollAnimation>
           </div>
         </div>
