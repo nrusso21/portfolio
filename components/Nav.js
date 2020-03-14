@@ -1,24 +1,53 @@
-import React from 'react'
-import Link from 'next/link'
+import React, { useEffect } from "react";
 
 const links = [
-  { href: '', label: 'About' },
-  { href: '', label: 'Projects' },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#portfolio", label: "Projects" },
+  { href: "#contact", label: "Contact" }
 ].map(link => ({
   ...link,
-  key: `nav-link-${link.href}-${link.label}`,
-}))
+  key: `nav-link-${link.href}-${link.label}`
+}));
 
-const Nav = () => (
-  <nav className="flex justify-center bg-indigo-900 border-b-4 border-teal-300">
-    <ul className="max-w-screen-xl w-full h-16 flex" >
-      {links.map(({ key, href, label }) => (
-        <li key={key} className="self-center" >
-          <a href={href} className="font-heading font-light text-xl mx-5 text-gray-200" >{label}</a>
-        </li>
-      ))}
-    </ul>
-  </nav>
-)
+const Nav = () => {
+  useEffect(() => {
+    window.onscroll = function() {
+      toggleSticky();
+    };
 
-export default Nav
+    const navbar = document.getElementById("navbar");
+
+    const sticky = navbar.offsetTop;
+
+    const toggleSticky = () => {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky-nav");
+      } else {
+        navbar.classList.remove("sticky-nav");
+      }
+    };
+  });
+
+  return (
+    <nav
+      id="navbar"
+      className="flex justify-center bg-indigo-900 border-b-4 border-teal-300 top-0 w-full z-10"
+    >
+      <ul className="max-w-screen-xl w-full h-16 flex">
+        {links.map(({ key, href, label }) => (
+          <li key={key} className="self-center">
+            <a
+              href={href}
+              className="font-heading font-light text-xl mx-5 text-gray-200 hover:text-red-600"
+            >
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+export default Nav;

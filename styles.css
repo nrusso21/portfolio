@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600|Open+Sans&display=swap");
 @tailwind base;
 
-body {
-  @apply overflow-x-hidden;
+html{
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -48,6 +48,16 @@ button:focus {
 .transition-easing {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+.sticky-nav {
+  @apply fixed;
+}
+.content {
+  @apply pt-4;
+}
+.sticky-nav + .content {
+  @apply pt-16;
 }
 
 .hex-wrapper {
