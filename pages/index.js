@@ -2,13 +2,14 @@ import React from "react";
 import Head from "next/head";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import Icon from "@mdi/react";
 import {
   mdiSpeedometer,
   mdiMonitorCellphone,
   mdiLightbulbOn,
   mdiRocket,
-  mdiPencilRuler
+  mdiGithubCircle,
+  mdiLinkedin,
+  mdiTwitter
 } from "@mdi/js";
 
 import Nav from "../components/Nav";
@@ -17,6 +18,8 @@ import SectionHeading from "../components/SectionHeading";
 import Bullet from "../components/Bullet";
 import SkillBullet from "../components/SkillBullet";
 import PortfolioCard from "../components/PortfolioCard";
+import ContactForm from "../components/ContactForm";
+import SocialIcon from "../components/SocialIcon";
 
 const Home = () => {
   return (
@@ -34,7 +37,11 @@ const Home = () => {
 
       <section id="about" className="content-section">
         <div className="container mx-auto">
-          <SectionHeading title="About" animationDirection="Left" />
+          <SectionHeading
+            title="About"
+            animationDirection="Left"
+            color="indigo-900"
+          />
           <div className="grid grid-cols-2 lg:grid-cols-4">
             <Bullet
               icon={mdiSpeedometer}
@@ -66,7 +73,10 @@ const Home = () => {
               animateIn="slideInLeft"
               animateOnce={true}
             >
-              <img src="/img/hexagon-avatar.png" className="w-64 md:w-48 lg:w-64 mx-auto" />
+              <img
+                src="/img/hexagon-avatar.png"
+                className="w-64 md:w-48 lg:w-64 mx-auto"
+              />
               <h1 className="text-center my-4 text-gray-700">Hello, World!</h1>
               <div className="px-20 text-center font-body text-gray-600">
                 I'm a full-stack developer located in Charlotte, NC. <br /> My
@@ -136,7 +146,11 @@ const Home = () => {
 
       <section id="portfolio" className="content-section bg-gray-100">
         <div className="container mx-auto">
-          <SectionHeading title="Portfolio" animationDirection="Right" />
+          <SectionHeading
+            title="Portfolio"
+            animationDirection="Right"
+            color="indigo-900"
+          />
           <div className="grid grid-cols-2 lg:grid-cols-3">
             <PortfolioCard
               cardKey="1"
@@ -170,14 +184,96 @@ const Home = () => {
               deployedHref="https://app.netlify.com/sites/translate-react-app/overview"
               bgImgPath="/img/portfolio/translate-demo.jpg"
             />
-            <PortfolioCard cardKey="5" />
-            <PortfolioCard cardKey="6" />
-            <PortfolioCard cardKey="7" />
-            <PortfolioCard cardKey="8" />
-            <PortfolioCard cardKey="9" />
+            <PortfolioCard
+              cardKey="5"
+              title="Gourmand"
+              projectStack="React"
+              githubHref="https://github.com/nrusso21/gourmand"
+              deployedHref="https://gourmand.netlify.com/"
+              bgImgPath="/img/portfolio/gourmand.jpg"
+            />
+            <PortfolioCard
+              cardKey="6"
+              title="Gourmand"
+              projectStack="React"
+              githubHref="https://github.com/nrusso21/gourmand"
+              deployedHref="https://gourmand.netlify.com/"
+              bgImgPath="/img/portfolio/gourmand.jpg"
+            />
+            <PortfolioCard
+              cardKey="7"
+              title="Gourmand"
+              projectStack="React"
+              githubHref="https://github.com/nrusso21/gourmand"
+              deployedHref="https://gourmand.netlify.com/"
+              bgImgPath="/img/portfolio/gourmand.jpg"
+            />
+            <PortfolioCard
+              cardKey="8"
+              title="Gourmand"
+              projectStack="React"
+              githubHref="https://github.com/nrusso21/gourmand"
+              deployedHref="https://gourmand.netlify.com/"
+              bgImgPath="/img/portfolio/gourmand.jpg"
+            />
+            <PortfolioCard
+              cardKey="9"
+              title="Gourmand"
+              projectStack="React"
+              githubHref="https://github.com/nrusso21/gourmand"
+              deployedHref="https://gourmand.netlify.com/"
+              bgImgPath="/img/portfolio/gourmand.jpg"
+            />
           </div>
         </div>
       </section>
+
+      <section id="contact" className="content-section bg-indigo-800 pt-0">
+        <svg
+          className="mb-12"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0 L50 100 L100 0 Z" fill="#eff5ee" stroke="white"></path>
+        </svg>
+
+        <div className="container mx-auto">
+          <SectionHeading
+            title="Contact"
+            animationDirection="Left"
+            color="white"
+          />
+
+          <div className="font-heading text-center text-teal-300 -mt-4 mb-16">
+            Have questions or want to collaborate?
+          </div>
+
+          <ContactForm />
+        </div>
+      </section>
+      <footer className="pt-16 pb-12 bg-indigo-900">
+        <div className="flex justify-center mb-12">
+          <SocialIcon
+            href="https://github.com/nrusso21"
+            icon={mdiGithubCircle}
+          />
+          <SocialIcon
+            href="https://www.linkedin.com/in/nicholas-russo-620856195/"
+            icon={mdiLinkedin}
+          />
+          <SocialIcon
+            href="https://twitter.com/NickRus93469915"
+            icon={mdiTwitter}
+          />
+        </div>
+        <div className="font-body text-xs text-gray-600 text-center">
+          NICHOLAS RUSSO <span className="text-red-600">©2020</span>
+        </div>
+      </footer>
     </>
   );
 };

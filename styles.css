@@ -23,8 +23,9 @@ h2 {
 h3 {
   @apply text-lg;
 }
-a {
-  outline: 0;
+a,
+button:focus {
+  outline: none;
 }
 
 .content-section {
@@ -37,12 +38,10 @@ a {
 .outline-button {
   width: max-content;
   @apply bg-transparent;
-  @apply text-purple-700;
   @apply font-semibold;
   @apply py-2;
   @apply px-4;
   @apply border;
-  @apply border-purple-800;
   @apply cursor-pointer;
 }
 

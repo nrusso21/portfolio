@@ -78,7 +78,7 @@ const PortfolioCard = ({
             href={deployedHref}
             target="_blank"
             rel="noopener noreferrer"
-            className={`outline-button transition-easing hover:bg-purple-800 hover:border-transparent hover:text-white`}
+            className={`outline-button text-purple-800 border-purple-800 transition-easing hover:bg-purple-800 hover:border-transparent hover:text-white`}
           >
             Check it out!
           </a>
