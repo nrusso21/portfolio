@@ -254,12 +254,15 @@ const Home = () => {
               animationDirection="Left"
               color="white"
             />
+            <ScrollAnimation animateIn="fadeInRight" animateOnce>
+              <div className="font-heading text-center text-teal-300 -mt-4 mb-16">
+                Have questions or want to collaborate?
+              </div>
+            </ScrollAnimation>
 
-            <div className="font-heading text-center text-teal-300 -mt-4 mb-16">
-              Have questions or want to collaborate?
-            </div>
-
-            <ContactForm />
+            <ScrollAnimation animateIn="zoomIn" animateOnce>
+              <ContactForm />
+            </ScrollAnimation>
           </div>
         </section>
         <footer className="pt-16 pb-12 bg-indigo-900">
