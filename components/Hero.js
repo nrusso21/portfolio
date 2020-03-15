@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <div className="flex flex-col justify-center bg-indigo-800">
         <Particles params={particlesConfig} height="100vh" />
-        <div className="absolute self-center z-10 text-3xl lg:text-5xl font-heading font-light text-gray-200 text-center select-none">
+        <div className="absolute self-center z-10 text-3xl md:text-4xl lg:text-5xl font-heading font-light text-gray-200 text-center select-none">
           Hello, I'm{" "}
           <span className="text-red-600 font-semibold">Nick Russo</span>.<br />
           I'm a full-stack web developer.
@@ -24,16 +24,16 @@ const Hero = () => {
       <style jsx>
         {`
           .button-position {
-            bottom: 11rem;
+            bottom: 10rem;
           }
           @media (min-width: 768px) {
               .button-position{
-                  bottom: 26rem;
+                  bottom: 24rem;
               }
           }
           @media (min-width: 1024px) {
               .button-position{
-                  bottom: 23rem;
+                  bottom: 22rem;
               }
           }
         `}

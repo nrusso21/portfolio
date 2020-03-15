@@ -53,16 +53,6 @@ button:focus {
   transition: all 300ms ease-in-out;
 }
 
-.sticky-nav {
-  @apply fixed;
-}
-.content {
-  @apply pt-4;
-}
-.sticky-nav + .content {
-  @apply pt-16;
-}
-
 .hex-wrapper {
   @apply inline-block;
   @apply w-24;

@@ -28,8 +28,9 @@ const ContactForm = () => {
         onSubmit={submitForm}
         action="https://formspree.io/xleldvbb"
         method="POST"
+        className="w-full md:w-3/4 lg:w-1/2 px-3"
       >
-        <div className="flex w-192 mb-4">
+        <div className="flex mb-4">
           <div className="inline-flex flex-col flex-grow mr-2">
             <label className="text-lg mb-2">Name:</label>
             <input

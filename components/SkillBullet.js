@@ -1,12 +1,12 @@
 import React from "react";
 
-const SkillBullet = ({ imgSrc, label, side }) => {
+const SkillBullet = ({ imgSrc, label, justification }) => {
   return (
     <>
       <div
-        className={`skill-bullet flex ${side === "center" ? "col-span-2" : ""}`}
+        className={`skill-bullet flex ${justification === "center" ? "col-span-2" : ""}`}
       >
-        <h3 className={`skill-bullet-label ${side} text-gray-700`}>
+        <h3 className={`skill-bullet-label ${justification} text-gray-700`}>
           {" "}
           {label}{" "}
         </h3>
@@ -19,7 +19,7 @@ const SkillBullet = ({ imgSrc, label, side }) => {
 
       <style jsx>{`
         .skill-bullet {
-          ${side === "left" ? "justify-self: end;" : side === "right" ? "justify-self: start;" : "justify-content: center;"}
+          ${justification === "left" ? "justify-self: end;" : justification === "right" ? "justify-self: start;" : "justify-content: center;"}
         }
         .skill-bullet-label {
           position: absolute;

@@ -22,9 +22,9 @@ const Nav = () => {
 
     const toggleSticky = () => {
       if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky-nav");
+        navbar.classList.add("sticky");
       } else {
-        navbar.classList.remove("sticky-nav");
+        navbar.classList.remove("sticky");
       }
     };
   });
