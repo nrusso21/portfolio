@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nick Russo</title>
+        <title>Nick Russo Dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
