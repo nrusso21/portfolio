@@ -56,14 +56,14 @@ const ContactForm = () => {
             name="message"
           />
         </div>
-        <div className="flex justify-end">
+        <div className="flex flex-col-reverse md:flex-row justify-end">
           {status === "ERROR" && (
-            <h1 className="animated bounceIn text-red-600 mr-8">Oh no! There was an error.</h1>
+            <h1 className="animated bounceIn text-red-600 mx-auto md:mr-16 mt-4 md:mt-0">Oh no! There was an error.</h1>
           )}
           {status === "SUCCESS" ? (
             <h1 className="animated flipInY text-teal-300" >Thanks!</h1>
           ) : (
-            <button className="outline-button transition-easing hover:bg-teal-300 hover:border-transparent hover:text-white">
+            <button className="w-full md:w-auto outline-button transition-easing hover:bg-teal-300 hover:border-transparent hover:text-white">
               Submit
             </button>
           )}
