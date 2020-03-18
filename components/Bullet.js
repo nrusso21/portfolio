@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Icon from "@mdi/react";
 
-const Bullet = ({ icon, label, body, delay }) => {
-  const [viewportWidth, setViewportWidth] = useState(null);
-  if (process.browser) {
-    useEffect(() => setViewportWidth(document.children[0].clientWidth), [
-      document.children[0].clientWidth
-    ]);
-  }
+const Bullet = ({ icon, label, body, delay, viewportWidth }) => {
 
   return (
     <ScrollAnimation

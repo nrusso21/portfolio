@@ -4,7 +4,9 @@ const SkillBullet = ({ imgSrc, label, justification }) => {
   return (
     <>
       <div
-        className={`skill-bullet flex ${justification === "center" ? "col-span-2" : ""}`}
+        className={`skill-bullet inline-flex ${
+          justification === "center" ? "w-full" : "w-1/2"
+        }`}
       >
         <h3 className={`skill-bullet-label ${justification} text-gray-700`}>
           {" "}
@@ -19,7 +21,11 @@ const SkillBullet = ({ imgSrc, label, justification }) => {
 
       <style jsx>{`
         .skill-bullet {
-          ${justification === "left" ? "justify-self: end;" : justification === "right" ? "justify-self: start;" : "justify-content: center;"}
+          ${justification === "left"
+            ? "justify-content: flex-end;"
+            : justification === "right"
+            ? "justify-content: start;"
+            : "justify-content: center;"}
         }
         .skill-bullet-label {
           position: absolute;

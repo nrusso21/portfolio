@@ -9,7 +9,8 @@ const PortfolioCard = ({
   projectStack,
   githubHref,
   deployedHref,
-  bgImgPath
+  bgImgPath,
+  delay
 }) => {
   useEffect(() => {
     const cardHover = document.querySelector(`.card-${cardKey}`);
@@ -65,6 +66,7 @@ const PortfolioCard = ({
         className={`card-${cardKey} flex flex-col justify-around h-56 md:h-72 overflow-hidden`}
         animateIn="fadeInUp"
         animateOnce
+        delay={delay}
       >
         <div className={`bg-${cardKey} w-full h-full fixed bg-img`}></div>
         <div
@@ -73,7 +75,9 @@ const PortfolioCard = ({
           <h1 className="text-indigo-900">{title}</h1>
           <div className="font-body text-purple-800">{projectStack}</div>
         </div>
-        <div className={`buttons-${cardKey} animated fadeInUp anim-paused fast-anim flex content-center self-center`}>
+        <div
+          className={`buttons-${cardKey} animated fadeInUp anim-paused fast-anim flex content-center self-center`}
+        >
           <a
             href={deployedHref}
             target="_blank"

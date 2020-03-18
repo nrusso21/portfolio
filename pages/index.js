@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -22,6 +22,13 @@ import ContactForm from "../components/ContactForm";
 import SocialIcon from "../components/SocialIcon";
 
 const Home = () => {
+  const [viewportWidth, setViewportWidth] = useState(null);
+  if (process.browser) {
+    useEffect(() => setViewportWidth(document.children[0].clientWidth), [
+      document.children[0].clientWidth
+    ]);
+  }
+
   return (
     <>
       <Head>
@@ -47,30 +54,34 @@ const Home = () => {
               icon={mdiSpeedometer}
               label="Fast"
               body="Optimized load times and app performance are my first and foremost priorities."
+              viewportWidth={viewportWidth}
             />
             <Bullet
               icon={mdiMonitorCellphone}
               label="Responsive"
               body="My applications are designed to work and look great on any device."
               delay={333}
+              viewportWidth={viewportWidth}
             />
             <Bullet
               icon={mdiLightbulbOn}
               label="Intuitive"
               body="I posses a keen sense for clean, intuitive UI/UX design."
               delay={667}
+              viewportWidth={viewportWidth}
             />
             <Bullet
               icon={mdiRocket}
               label="Dynamic"
               body="Even the most simple websites can be lively and engaing."
               delay={1000}
+              viewportWidth={viewportWidth}
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <ScrollAnimation
               className="my-12 md:my-0"
-              animateIn="slideInLeft"
+              animateIn="fadeInLeft"
               animateOnce={true}
             >
               <img
@@ -84,11 +95,7 @@ const Home = () => {
                 engaging and intuitive user experiences knows no bounds!
               </div>
             </ScrollAnimation>
-            <ScrollAnimation
-              className="grid grid-cols-2"
-              animateIn="slideInRight"
-              animateOnce={true}
-            >
+            <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <SkillBullet
                 imgSrc="/img/skills/react-logo.svg"
                 label="React"
@@ -167,6 +174,7 @@ const Home = () => {
               githubHref="https://github.com/nrusso21/react-youtube-search"
               deployedHref="https://youtube-search-react-app.netlify.com/"
               bgImgPath="/img/portfolio/youtube-search.jpg"
+              delay={viewportWidth > 640 ? 250 : 0}
             />
             <PortfolioCard
               cardKey="3"
@@ -175,6 +183,7 @@ const Home = () => {
               githubHref="https://github.com/nrusso21/react-unsplash-search"
               deployedHref="https://unsplash-search-react-app.netlify.com/"
               bgImgPath="/img/portfolio/unsplash-search.jpg"
+              delay={viewportWidth > 640 ? 500 : 0}
             />
             <PortfolioCard
               cardKey="4"
@@ -191,6 +200,7 @@ const Home = () => {
               githubHref="https://github.com/nrusso21/react-translate-form"
               deployedHref="https://app.netlify.com/sites/translate-react-app/overview"
               bgImgPath="/img/portfolio/translate-demo.jpg"
+              delay={viewportWidth > 640 ? 250 : 0}
             />
             <PortfolioCard
               cardKey="6"
@@ -199,6 +209,7 @@ const Home = () => {
               githubHref="https://github.com/nrusso21/react-redux-blog"
               deployedHref="https://react-redux-jsonplaceholder-blog.netlify.com/"
               bgImgPath="/img/portfolio/redux-blog.jpg"
+              delay={viewportWidth > 640 ? 500 : 0}
             />
             <PortfolioCard
               cardKey="7"
@@ -215,6 +226,7 @@ const Home = () => {
               githubHref="https://github.com/nrusso21/dom-pig-game"
               deployedHref="https://nrusso21.github.io/dom-pig-game/"
               bgImgPath="/img/portfolio/pig-game.jpg"
+              delay={250}
             />
           </div>
         </div>
