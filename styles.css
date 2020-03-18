@@ -39,7 +39,7 @@ button:focus {
   @apply pb-24;
 }
 .outline-button {
-  width: max-content;
+  min-width: max-content;
   @apply bg-transparent;
   @apply font-semibold;
   @apply py-2;
