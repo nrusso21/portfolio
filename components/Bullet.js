@@ -24,7 +24,7 @@ const Bullet = ({ icon, label, body, delay, viewportWidth }) => {
         </div>
       </ScrollAnimation>
       <h1 className="text-center mt-4 mb-2 text-gray-700">{label}</h1>
-      <div className="mb-12 px-8 text-center font-body text-gray-600">
+      <div className="mb-12 px-8 text-center font-body text-sm md:text-base text-gray-600">
         {body}
       </div>
     </ScrollAnimation>

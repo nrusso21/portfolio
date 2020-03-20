@@ -91,7 +91,7 @@ const Home = () => {
               <h1 className="text-center my-4 text-gray-700">Hello, World!</h1>
               <div className="px-20 text-center font-body text-gray-600">
                 I'm a full-stack developer located in Charlotte, NC. <br /> My
-                passion for crafting effecient, well-optimized applications with
+                passion for crafting efficient, well-optimized applications with
                 engaging and intuitive user experiences knows no bounds!
               </div>
             </ScrollAnimation>
