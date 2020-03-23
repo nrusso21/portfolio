@@ -33,7 +33,10 @@ const Home = () => {
     <>
       <Head>
         <title>Nick Russo Dev</title>
+        <meta name="title" content="Nick Russo Dev" />
+        <meta name="description" content="Nick Russo's Development Portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="image_src" href="/thumbnail.jpg" />
       </Head>
 
       <section id="home">
