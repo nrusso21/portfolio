@@ -36,7 +36,24 @@ const Home = () => {
         <meta name="title" content="Nick Russo Dev" />
         <meta name="description" content="Nick Russo's Development Portfolio" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="image_src" href="/thumbnail.jpg" />
+        {/* OPEN GRAPH */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.nickrusso.dev/" />
+        <meta property="og:title" content="Nick Russo Dev" />
+        <meta
+          property="og:description"
+          content="Nick Russo's Development Portfolio"
+        />
+        <meta property="og:image" content="/thumbnail.jpg" />
+        {/* TWITTER */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.nickrusso.dev/" />
+        <meta property="twitter:title" content="Nick Russo Dev" />
+        <meta
+          property="twitter:description"
+          content="Nick Russo's Development Portfolio"
+        />
+        <meta property="twitter:image" content="/thumbnail.jpg" />
       </Head>
 
       <section id="home">
