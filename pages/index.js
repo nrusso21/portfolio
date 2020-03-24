@@ -218,7 +218,7 @@ const Home = () => {
               title="Translate Demo"
               projectStack="React"
               githubHref="https://github.com/nrusso21/react-translate-form"
-              deployedHref="https://app.netlify.com/sites/translate-react-app/overview"
+              deployedHref="https://translate-react-app.netlify.com/"
               bgImgPath="/img/portfolio/translate-demo.jpg"
               delay={viewportWidth > 640 ? 250 : 0}
             />
