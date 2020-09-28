@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Head from "next/head";
-import ScrollAnimation from "react-animate-on-scroll";
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import {
   mdiSpeedometer,
@@ -9,23 +9,23 @@ import {
   mdiRocket,
   mdiGithubCircle,
   mdiLinkedin,
-  mdiTwitter
-} from "@mdi/js";
+  mdiTwitter,
+} from '@mdi/js';
 
-import Nav from "../components/Nav";
-import Hero from "../components/Hero";
-import SectionHeading from "../components/SectionHeading";
-import Bullet from "../components/Bullet";
-import SkillBullet from "../components/SkillBullet";
-import PortfolioCard from "../components/PortfolioCard";
-import ContactForm from "../components/ContactForm";
-import SocialIcon from "../components/SocialIcon";
+import Nav from '../components/Nav';
+import Hero from '../components/Hero';
+import SectionHeading from '../components/SectionHeading';
+import Bullet from '../components/Bullet';
+import SkillBullet from '../components/SkillBullet';
+import PortfolioCard from '../components/PortfolioCard';
+import ContactForm from '../components/ContactForm';
+import SocialIcon from '../components/SocialIcon';
 
 const Home = () => {
   const [viewportWidth, setViewportWidth] = useState(null);
   if (process.browser) {
     useEffect(() => setViewportWidth(document.children[0].clientWidth), [
-      document.children[0].clientWidth
+      document.children[0].clientWidth,
     ]);
   }
 
@@ -183,7 +183,7 @@ const Home = () => {
               cardKey="1"
               title="Gourmand"
               projectStack="React"
-              githubHref="https://github.com/nrusso21/gourmand"
+              githubHref="https://github.com/stringmander/gourmand"
               deployedHref="https://gourmand.netlify.com/"
               bgImgPath="/img/portfolio/gourmand.jpg"
             />
@@ -191,7 +191,7 @@ const Home = () => {
               cardKey="2"
               title="YouTube Search"
               projectStack="React"
-              githubHref="https://github.com/nrusso21/react-youtube-search"
+              githubHref="https://github.com/stringmander/react-youtube-search"
               deployedHref="https://youtube-search-react-app.netlify.com/"
               bgImgPath="/img/portfolio/youtube-search.jpg"
               delay={viewportWidth > 640 ? 250 : 0}
@@ -200,7 +200,7 @@ const Home = () => {
               cardKey="3"
               title="Unsplash Search"
               projectStack="React"
-              githubHref="https://github.com/nrusso21/react-unsplash-search"
+              githubHref="https://github.com/stringmander/react-unsplash-search"
               deployedHref="https://unsplash-search-react-app.netlify.com/"
               bgImgPath="/img/portfolio/unsplash-search.jpg"
               delay={viewportWidth > 640 ? 500 : 0}
@@ -209,7 +209,7 @@ const Home = () => {
               cardKey="4"
               title="Season Detector"
               projectStack="React"
-              githubHref="https://github.com/nrusso21/react-hooks-seasons-app"
+              githubHref="https://github.com/stringmander/react-hooks-seasons-app"
               deployedHref="https://seasons-hooks-react-app.netlify.com/"
               bgImgPath="/img/portfolio/seasons-hooks.jpg"
             />
@@ -217,7 +217,7 @@ const Home = () => {
               cardKey="5"
               title="Translate Demo"
               projectStack="React"
-              githubHref="https://github.com/nrusso21/react-translate-form"
+              githubHref="https://github.com/stringmander/react-translate-form"
               deployedHref="https://translate-react-app.netlify.com/"
               bgImgPath="/img/portfolio/translate-demo.jpg"
               delay={viewportWidth > 640 ? 250 : 0}
@@ -226,7 +226,7 @@ const Home = () => {
               cardKey="6"
               title="Redux Blog Demo"
               projectStack="React Redux"
-              githubHref="https://github.com/nrusso21/react-redux-blog"
+              githubHref="https://github.com/stringmander/react-redux-blog"
               deployedHref="https://react-redux-jsonplaceholder-blog.netlify.com/"
               bgImgPath="/img/portfolio/redux-blog.jpg"
               delay={viewportWidth > 640 ? 500 : 0}
@@ -235,16 +235,16 @@ const Home = () => {
               cardKey="7"
               title="Budgety"
               projectStack="JavaScript"
-              githubHref="https://github.com/nrusso21/budgety"
-              deployedHref="https://nrusso21.github.io/budgety/"
+              githubHref="https://github.com/stringmander/budgety"
+              deployedHref="https://stringmander.github.io/budgety/"
               bgImgPath="/img/portfolio/budgety.jpg"
             />
             <PortfolioCard
               cardKey="8"
               title="Pig Game"
               projectStack="JavaScript"
-              githubHref="https://github.com/nrusso21/dom-pig-game"
-              deployedHref="https://nrusso21.github.io/dom-pig-game/"
+              githubHref="https://github.com/stringmander/dom-pig-game"
+              deployedHref="https://stringmander.github.io/dom-pig-game/"
               bgImgPath="/img/portfolio/pig-game.jpg"
               delay={250}
             />
@@ -285,7 +285,7 @@ const Home = () => {
       <footer className="pt-16 pb-12 bg-indigo-900">
         <div className="flex justify-center mb-12">
           <SocialIcon
-            href="https://github.com/nrusso21"
+            href="https://github.com/stringmander"
             icon={mdiGithubCircle}
           />
           <SocialIcon
