@@ -8,7 +8,7 @@ const SkillBullet = ({ imgSrc, label, justification }) => {
           justification === "center" ? "w-full" : "w-1/2"
         }`}
       >
-        <h3 className={`skill-bullet-label ${justification} text-gray-700`}>
+        <h3 className={`skill-bullet-label ${justification} text-sm lg:text-base text-gray-700`}>
           {" "}
           {label}{" "}
         </h3>
@@ -32,34 +32,34 @@ const SkillBullet = ({ imgSrc, label, justification }) => {
           align-self: center;
         }
         .center {
-          left: 17rem;
+          left: 64%;
         }
         .left {
-          right: 19rem;
+          right: 74%;
         }
         .right {
-          left: 19rem;
+          left: 74%;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 360px) {
           .center {
-            left: 15rem;
+            left: 61%;
           }
           .left {
-            right: 17rem;
+            right: 71%;
           }
           .right {
-            left: 17rem;
+            left: 71%;
           }
         }
         @media (min-width: 1024px) {
           .center {
-            left: 23rem;
+            left: 57%;
           }
           .left {
-            right: 25rem;
+            right: 62%;
           }
           .right {
-            left: 25rem;
+            left: 62%;
           }
         }
       `}</style>

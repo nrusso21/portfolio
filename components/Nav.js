@@ -39,7 +39,7 @@ const Nav = () => {
           <li key={key} className="self-center">
             <a
               href={href}
-              className="font-heading font-light text-xl mx-5 text-gray-200 hover:text-red-600 transition-easing"
+              className="font-heading font-light lg:text-xl mx-5 text-gray-200 hover:text-red-600 transition-easing"
             >
               {label}
             </a>

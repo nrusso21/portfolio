@@ -1,11 +1,11 @@
 /* purgecss start ignore */
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600|Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600|Open+Sans&display=swap');
 @tailwind base;
 
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   overflow-x: hidden;
 }
 h1,
@@ -74,7 +74,7 @@ button:focus {
 }
 .hexagon:before {
   background-color: inherit;
-  content: "";
+  content: '';
   height: inherit;
   @apply absolute;
   right: calc((100% / 2) - ((100% * 0.57735) / 2));
@@ -84,7 +84,7 @@ button:focus {
 }
 .hexagon:after {
   background-color: inherit;
-  content: "";
+  content: '';
   height: inherit;
   @apply absolute;
   right: calc((100% / 2) - ((100% * 0.57735) / 2));
@@ -93,7 +93,7 @@ button:focus {
   width: inherit;
 }
 .hexagon-icon {
-  fill: #fff;
+  color: #fff;
   @apply self-center;
   z-index: 1;
   transform: rotateZ(-30deg);
