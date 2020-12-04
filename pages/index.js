@@ -117,23 +117,38 @@ const Home = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
               <SkillBullet
+                imgSrc="/img/skills/typescript-logo.svg"
+                label="TypeScript"
+                justification="center"
+              />
+              <SkillBullet
                 imgSrc="/img/skills/react-logo.svg"
                 label="React"
-                justification="center"
+                justification="left"
+              />
+              <SkillBullet
+                imgSrc="/img/skills/next-js-logo.svg"
+                label="Next.js"
+                justification="right"
               />
               <SkillBullet
                 imgSrc="/img/skills/javascript-logo.svg"
                 label="JavaScript"
-                justification="left"
+                justification="center"
               />
               <SkillBullet
                 imgSrc="/img/skills/html-logo.svg"
                 label="HTML"
-                justification="right"
+                justification="left"
               />
               <SkillBullet
                 imgSrc="/img/skills/css-logo.svg"
                 label="CSS"
+                justification="right"
+              />
+              <SkillBullet
+                imgSrc="/img/skills/node-js-logo.svg"
+                label="Node.js"
                 justification="center"
               />
               <SkillBullet
@@ -147,23 +162,8 @@ const Home = () => {
                 justification="right"
               />
               <SkillBullet
-                imgSrc="/img/skills/figma-logo.svg"
-                label="Figma"
-                justification="center"
-              />
-              <SkillBullet
-                imgSrc="/img/skills/node-js-logo.svg"
-                label="Node.js"
-                justification="left"
-              />
-              <SkillBullet
                 imgSrc="/img/skills/mysql-logo.svg"
                 label="MySQL"
-                justification="right"
-              />
-              <SkillBullet
-                imgSrc="/img/skills/next-js-logo.svg"
-                label="Next.js"
                 justification="center"
               />
             </ScrollAnimation>
