@@ -34,7 +34,7 @@ const Nav = () => {
       id="navbar"
       className="flex justify-center bg-indigo-900 border-b-4 border-teal-300 top-0 w-full z-10"
     >
-      <ul className="max-w-screen-xl w-full h-16 flex">
+      <ul className="max-w-screen-xl w-full h-16 flex justify-center">
         {links.map(({ key, href, label }) => (
           <li key={key} className="self-center">
             <a
